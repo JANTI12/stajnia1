@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Stajnia Felinka</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+  rel="stylesheet"
+/>
+
+
+
+<script>
+document.location.href = "#onas";
+	function changemenu(){
+		if (window.pageYOffset < 10){
+			document.getElementById("menu").style.backgroundColor="transparent";
+		} else {
+			document.getElementById("menu").style.backgroundColor="#222222";
+		}
+	}
+
+	var image=1;
+	function nextImage(){	
+		window.scrollTo(0,0);
+		if (image==1){
+			document.getElementById("abc").innerHTML = `<div class="w3-animate-opacity" style="background-image: url(zdj12.jpg); background-size:cover; background-position:center; height:100vh; width:100vw" id="abc"> <div style='height:35vh'></div> <div class='ja-title w3-animate-right' id='stajniafelinka'> STAJNIA FELINKA </div> <i class="fa-solid fa-chevron-left fa-beat w3-left" style="color: #ffffff; margin-left:3vw; font-size:40px; text-shadow:3px 3px 5px black" onmouseover='this.style.color="#222222"' onmouseout='this.style.color="#ffffff"' onclick='previousImage()'></i> <i class="fa-solid fa-chevron-right fa-beat w3-right" style="color: #ffffff; margin-right:3vw; font-size:40px; text-shadow:3px 3px 5px black" onmouseover='this.style.color="#222222"' onmouseout='this.style.color="#ffffff"' onclick='nextImage()'></i>  </div>`;
+			image = 2;
+		} 
+		else if (image==2){
+			document.getElementById("abc").innerHTML = `<div class="" style="background-image: url(zdj22.jpg); background-size:cover; background-position:center; height:100vh; width:100vw" id="abc"> <div style='height:35vh'></div> <div class='ja-title w3-animate-right' id='stajniafelinka'> STAJNIA FELINKA </div> <i class="fa-solid fa-chevron-left fa-beat w3-left" style="color: #ffffff; margin-left:3vw; font-size:40px; text-shadow:3px 3px 5px black" onmouseover='this.style.color="#222222"' onmouseout='this.style.color="#ffffff"' onclick='previousImage()'></i> <i class="fa-solid fa-chevron-right fa-beat w3-right" style="color: #ffffff; margin-right:3vw; font-size:40px; text-shadow:3px 3px 5px black" onmouseover='this.style.color="#222222"' onmouseout='this.style.color="#ffffff"' onclick='nextImage()'></i>  </div>`
+			image = 3;
+		}
+		else if (image==3){
+			document.getElementById("abc").innerHTML = `<div class="w3-animate-opacity" style="background-image: url(zdj7.jpg); background-size:cover; background-position:center; height:100vh; width:100vw" id="abc"> <div style='height:35vh'></div> <div class='ja-title w3-animate-right' id='stajniafelinka'> STAJNIA FELINKA</div> <i class="fa-solid fa-chevron-left fa-beat w3-left" style="color: #ffffff; margin-left:3vw; font-size:40px; text-shadow:3px 3px 5px black" onmouseover='this.style.color="#222222"' onmouseout='this.style.color="#ffffff"' onclick='previousImage()'></i> <i class="fa-solid fa-chevron-right fa-beat w3-right" style="color: #ffffff; margin-right:3vw; font-size:40px; text-shadow:3px 3px 5px black" onmouseover='this.style.color="#222222"' onmouseout='this.style.color="#ffffff"' onclick='nextImage()'></i>  </div>`
+			image = 1;
+		}
+	}
+
+	function previousImage(){	
+		window.scrollTo(0,0);
+		if (image==3){
+			document.getElementById("abc").innerHTML = `<div class="w3-animate-opacity" style="background-image: url(zdj12.jpg); background-size:cover; background-position:center; height:100vh; width:100vw" id="abc"> <div style='height:35vh'></div> <div class='ja-title w3-animate-right' id='stajniafelinka'> STAJNIA FELINKA </div> <i class="fa-solid fa-chevron-left fa-beat w3-left" style="color: #ffffff; margin-left:3vw; font-size:40px; text-shadow:3px 3px 5px black" onmouseover='this.style.color="#222222"' onmouseout='this.style.color="#ffffff"' onclick='previousImage()'></i> <i class="fa-solid fa-chevron-right fa-beat w3-right" style="color: #ffffff; margin-right:3vw; font-size:40px; text-shadow:3px 3px 5px black" onmouseover='this.style.color="#222222"' onmouseout='this.style.color="#ffffff"' onclick='nextImage()'></i>  </div>`
+			image = 2;
+		} 
+		else if (image==1){
+			document.getElementById("abc").innerHTML = `<div class="w3-animate-opacity" style="background-image: url(zdj22.jpg); background-size:cover; background-position:center; height:100vh; width:100vw" id="abc"> <div style='height:35vh'></div> <div class='ja-title w3-animate-right' id='stajniafelinka'> STAJNIA FELINKA </div> <i class="fa-solid fa-chevron-left fa-beat w3-left" style="color: #ffffff; margin-left:3vw; font-size:40px; text-shadow:3px 3px 5px black" onmouseover='this.style.color="#222222"' onmouseout='this.style.color="#ffffff"' onclick='previousImage()'></i> <i class="fa-solid fa-chevron-right fa-beat w3-right" style="color: #ffffff; margin-right:3vw; font-size:40px; text-shadow:3px 3px 5px black" onmouseover='this.style.color="#222222"' onmouseout='this.style.color="#ffffff"' onclick='nextImage()'></i>  </div>`
+			image = 3;
+		}
+		else if (image==2){
+			document.getElementById("abc").innerHTML = `<div class="w3-animate-opacity" style="background-image: url(zdj7.jpg); background-size:cover; background-position:center; height:100vh; width:100vw" id="abc"> <div style='height:35vh'></div> <div class='ja-title w3-animate-right' id='stajniafelinka'> STAJNIA FELINKA </div> <i class="fa-solid fa-chevron-left fa-beat w3-left" style="color: #ffffff; margin-left:3vw; font-size:40px; text-shadow:3px 3px 5px black" onmouseover='this.style.color="#222222"' onmouseout='this.style.color="#ffffff"' onclick='previousImage()'></i> <i class="fa-solid fa-chevron-right fa-beat w3-right" style="color: #ffffff; margin-right:3vw; font-size:40px; text-shadow:3px 3px 5px black" onmouseover='this.style.color="#222222"' onmouseout='this.style.color="#ffffff"' onclick='nextImage()'></i> </div>`
+			image = 1;
+		}
+	}
+
+
+	function displayImages(ulr){
+		document.getElementById('imagescreen').style.display = "block";
+		document.getElementById('image').style.backgroundImage = 'url("ulr")';
+		
+	}
+	function hideImages(){
+		document.getElementById('imagescreen').style.display = "none";
+		
+	}
+	function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+
+<style>
+	input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+	div.zakladki > div {display: none}
+  	  div.zakladki div:target {display: block}
+
+
+	hr {
+		background-color:darkgreen;
+		height:2px;
+		margin-left:15px;
+		width:96vw;
+	}
+	.ja-menu a{
+		margin-right:2vw;
+		font-size:1.2vw;
+		color:white;
+		text-decoration:none;
+		font-weight:bold;
+		font-family:arial;
+
+	}
+	.ja-menu {
+		margin-top:0vh;
+		position:fixed;
+		text-align:right;
+		width:100vw;
+		text-shadow: 3px 3px 5px black;
+		z-index:2;
+	}
+	.ja-title {
+		width:100vw;
+		display : flex;
+		align-items: center;
+		justify-content:center;
+		color:white;
+		font-size:4vw;
+		text-shadow: 2px 2px 3px black;
+	}
+	.ja-title2 {
+		width:100vw;
+		display : flex;
+		align-items: center;
+		justify-content:center;
+		color:white;
+		font-size:2vw;
+		margin-top:4vh;
+		text-shadow: 2px 2px 3px black;
+	}
+	.ja-image-background {
+		position:fixed;
+		width:100vw;
+		height:100vh;
+		background: rgba(0, 0, 0, 0.7);
+		z-index:3;
+		text-align:center;
+	}
+	.ja-image-screen {
+		background-color:black;
+		width: 62vw;
+		height:64vh;
+		margin-top:20vh;
+		margin-left:20vw;
+		vertical-align:bottom;
+		border:2vh solid black;
+		border-top-left-radius: 1vw;
+		border-top-right-radius: 1vw;
+		border-bottom-left-radius: 1vw;
+		border-bottom-right-radius: 1vw;
+	}
+</style>
+
+</head>
+<body style='margin:0px; margin:0px' onscroll=changemenu() >
+
+<div class="ja-menu" id="menu">
+	<a  style="margin-right:0px; color:white;" class="w3-bar-item w3-animate-zoom w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right w3-hover-none" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars fa-2xl" style='color:white'></i></a>
+        <a class="w3-bar-item w3-animate-zoom w3-button w3-padding-large  w3-hide-small w3-hover-text-red w3-hover-none w3-serif w3-left" href="#onas" onclick="changeContent('onas' )">LOGO STAJNI</a>
+	<a class="w3-bar-item w3-animate-zoom w3-button w3-padding-large  w3-hide-small w3-hover-text-red w3-hover-none w3-serif" href="#onas" onclick="changeContent('onas' )">O NAS</a>
+	<a class="w3-bar-item w3-animate-zoom w3-button w3-padding-large  w3-hide-small w3-hover-text-red w3-hover-none w3-serif" href="#zdjecia" onclick="changeContent('zdjecia')">ZDJĘCIA</a>
+	<a class="w3-bar-item w3-animate-zoom w3-button w3-padding-large  w3-hide-small w3-hover-text-red w3-hover-none w3-serif" href="#konie" onclick="changeContent('d4')">KONIE</a>
+	<a class="w3-bar-item w3-animate-zoom w3-button w3-padding-large  w3-hide-small w3-hover-text-red w3-hover-none w3-serif" href="#cennik" onclick="changeContent('d4')">CENNIK</a>
+	<a class="w3-bar-item w3-animate-zoom w3-button w3-padding-large  w3-hide-small w3-hover-text-red w3-hover-none w3-serif" href="#kontakt" onclick="changeContent('kontakt')">KONTAKT</a>
+</div>
+
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="">
+  <a  class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"></a>
+  <a href="#onas" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">O nas</a>
+  <a href="#zdjecia" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Zdjęcia</a>
+  <a href="#konie" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Konie</a>
+  <a href="#cennik" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Cennik</a>
+  <a href="#kontakt" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Kontakt</a>
+</div>
+
+	<div class='ja-image-background w3-round-large' style='display:none' id="imagescreen">
+		<div class='ja-image-screen'>
+			<a style='color:red' class='w3-right' onclick=hideImages() href="javascript:hideImages()"><i class="fa-solid fa-xmark" style="color: #b12b2b;"></i></a>
+
+			<div id='image' style='background-image:url("zdj15.jpg"); background-size:contain; background-repeat:no-repeat; background-position:center; text-align:center; width:60vw; height:60vh;' class=''>
+			</div>
+		</div>
+	</div>
+
+	<div class="" style="background-image: url(zdj0.jpg); background-size:cover; background-position:center; height:100vh; width:100vw; z-index:0" id="abc">
+			<div style='height:35vh'></div>
+			<div class='ja-title w3-animate-right'>
+				STAJNIA FELINKA
+			</div>
+			<i class="fa-solid fa-chevron-left fa-beat w3-left w3-hide-small" style="color: #ffffff; margin-left:3vw; font-size:40px; text-shadow:3px 3px 5px black" onmouseover='this.style.color="#222222"' onmouseout='this.style.color="#ffffff"' onclick='previousImage()'></i>
+			<i class="fa-solid fa-chevron-right fa-beat w3-right" style="color: #ffffff; margin-right:3vw; font-size:40px; text-shadow:3px 3px 5px black" onmouseover='this.style.color="#222222"' onmouseout='this.style.color="#ffffff"' onclick='nextImage()'></i>		
+			
+		
+	</div>
+
+
+<div class="zakladki" style='z-index:0' id='zakladki'>
+	<!--onas-->
+	<div id="onas" style='width:100vw'> 
+		<br><br><hr style='width:90vw'><h1 class='w3-center w3-margin'><hr style='width:15vw;'><i class="fa-solid fa-newspaper "></i><b> O nas</b></h1><br>
+		<div class='w3-mobile w3-row-padding'>
+			
+			<div style=' margin-top:3vh; margin-left:4vw; color:#333333' class='w3-serif w3-large w3-col m6 w3-animate-left'> STAJNIA FELINKA" zaprasza na naukę jazdy konnej na kucach felińskich: dzieci, młodzież oraz dorosłych.<br>
+				Oferujemy naukę jazdy konnej pod okiem doświadczonego, posiadającego wieloletni staż pracy Instruktora jazdy konnej oraz Przodownika Górskiej Turystyki Jeździeckiej.
+				Prowadzimy jazdy konne zarówno dla osób początkujących jak i zaawansowanych na ujeżdżalni.<br>
+				Dla osób zaawansowanych możliwe wyjazdy w teren, a dla początkujących oraz najmłodszych jeźdźców atrakcyjne spacerki konne w terenie.
+			</div>
+			<div class="w3-col m5" style="margin-top:3vh;"><img src='zdj7.jpg' class='w3-image rounded'></div>
+  
+		</div>
+			<br><br><hr style='width:90vw'><h1 class='w3-center w3-margin'><hr style='width:15vw;'></h1>
+			<br>
+<div class='row w3-margin'>
+	<div class="col w3-mobile w3-hide-large" style='text-align:center'>
+		<iframe style='width:90vw; height:40vh;' class='' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2566.2919646436503!2d20.041334215713995!3d49.96838297941173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471643b27c6d5f2f%3A0xa608f3381ee16e93!2sStajnia%20Felinka!5e0!3m2!1spl!2spl!4v1687310074469!5m2!1spl!2spl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br><br>
+	</div>
+	<div class="col w3-mobile w3-hide-small w3-hide-medium" style='text-align:center'>
+		<iframe style='width:50vw; height:40vh;' class='' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2566.2919646436503!2d20.041334215713995!3d49.96838297941173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471643b27c6d5f2f%3A0xa608f3381ee16e93!2sStajnia%20Felinka!5e0!3m2!1spl!2spl!4v1687310074469!5m2!1spl!2spl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br><br>
+	</div>
+	
+		<div class='col w3-mobile' style='text-align:center'><br>
+			
+			<h3 class=''><b class='w3-xxlarge' style='text-shadow: 2px 2px 5px green'>Agata Janowska</b><br><br>
+Siercza k/Wieliczki<br>
+601-498-843<br>
+Instruktor Jazdy Konnej<br>
+Nr.Leg. 30773/I/R/2009 Prz</h3>
+			
+			
+		</div>
+	</div>
+		<br><br><hr style='width:90vw'><h1 class='w3-center w3-margin'><hr style='width:15vw;'>
+		
+
+<div class="row" style='margin:5vw'>
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img
+      src="zdj1.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+	  style='object-fit:cover; height:30vh'
+    />
+
+    <img
+      src="zdj4.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+	  style='object-fit:cover; height:80vh'
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="zdj3.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Mountains in the Clouds"
+	  style='object-fit:cover; height:80vh'
+    />
+
+    <img
+      src="zdj11.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+	  style='object-fit:cover; height:30vh'
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="zdj6.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Waves at Sea"
+	  style='object-fit:cover; height:30vh'
+    />
+
+    <img
+      src="zdj19.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Yosemite National Park"
+	  style='object-fit:cover; height:80vh'
+    />
+  </div>
+</div>
+	</div>
+		
+	
+	<div id="zdjecia" >
+
+	<br><br><hr style='width:90vw'><h1 class='w3-center w3-margin'><hr style='width:15vw;'><i class="fa-solid fa-newspaper "></i><b> Galeria </b></h1><br>
+
+      <div class="row" style='margin:5vw'>
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img
+      src="zdj1.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+	style='object-fit:cover; height:50vh'
+    />
+
+    <img
+      src="zdj2.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+	style='object-fit:cover; height:80vh'
+    />
+	
+    <img
+      src="zdj15.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+style='object-fit:cover; height:50vh'
+    />
+	<img
+      src="zdj1.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+
+    <img
+      src="zdj2.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+    />
+	
+    <img
+      src="zdj15.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="zdj12.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Mountains in the Clouds"
+style='object-fit:cover; height:80vh'
+    />
+
+    <img
+      src="zdj3.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+style='object-fit:cover; height:40vh'
+    />
+	
+    <img
+      src="zdj14.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+style='object-fit:cover; height:60vh'
+    />
+<img
+      src="zdj2.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+
+    <img
+      src="zdj1.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+    />
+	
+    <img
+      src="zdj15.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="zdj11.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Waves at Sea"
+style='object-fit:cover; height:50vh'
+    />
+
+    <img
+      src="zdj10.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Yosemite National Park"
+style='object-fit:cover; height:80vh'
+    />
+	
+    <img
+      src="zdj15.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+style='object-fit:cover; height:50vh'
+    />
+<img
+      src="zdj1.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+
+    <img
+      src="zdj2.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+    />
+	
+    <img
+      src="zdj15.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+    />
+  </div>
+</div>
+<!-- Gallery -->
+
+
+
+
+</div>
+	
+
+
+	<div id="konie">
+<br><br><hr style='width:90vw'><h1 class='w3-center w3-margin'><hr style='width:15vw;'><i class="fa-solid fa-newspaper "></i><b> Nasze konie</b></h1><br>
+<div class="row row-cols-1 row-cols-md-3 g-4 w3-margin">
+  <div class="col">
+	<div class="card">
+      <img src="frajda.jpg" class="card-img-top" alt="Hollywood Sign on The Hill" style='object-fit:cover; height:50vh'/>
+      <div class="card-body">
+        <h5 class="card-title">Febo</h5>
+        <p class="card-text">
+          Rok urodzenia:
+	<br>Umaszczenie:
+	<br>...
+        </p>
+<a href="https://www.bazakoni.pl/fiesta-zotyruczaj-figlarka" class="btn btn-primary">Dowiedz się więcej</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="frajda.jpg" class="card-img-top" alt="Palm Springs Road" style='object-fit:cover; height:50vh'/>
+      <div class="card-body">
+        <h5 class="card-title">Frajda</h5>
+        <p class="card-text">
+          Rok urodzenia:
+	<br>Umaszczenie:
+	<br>...
+        </p>
+<a href="https://www.bazakoni.pl/fiesta-zotyruczaj-figlarka" class="btn btn-primary">Dowiedz się więcej</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="frajda.jpg" alt="Los Angeles Skyscrapers" style='object-fit:cover; height:50vh'/>
+      <div class="card-body">
+        <h5 class="card-title">Filly</h5>
+        <p class="card-text">Rok urodzenia:
+	<br>Umaszczenie:
+	<br>...</p>
+	<a href="https://www.bazakoni.pl/fiesta-zotyruczaj-figlarka" class="btn btn-primary">Dowiedz się więcej</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="frajda.jpg" class="card-img-top" alt="Skyscrapers" style='object-fit:cover; height:50vh'/>
+      <div class="card-body">
+        <h5 class="card-title">Fryga</h5>
+        <p class="card-text">
+         Rok urodzenia:
+	<br>Umaszczenie:
+	<br>...
+        </p>
+<a href="https://www.bazakoni.pl/fiesta-zotyruczaj-figlarka" class="btn btn-primary">Dowiedz się więcej</a>
+      </div>
+    </div>
+  </div>
+<div class="col">
+    <div class="card">
+      <img src="frajda.jpg" class="card-img-top" alt="Skyscrapers" style='object-fit:cover; height:50vh'/>
+      <div class="card-body">
+        <h5 class="card-title">Flora</h5>
+        <p class="card-text">
+Rok urodzenia:
+	<br>Umaszczenie:
+	<br>...
+          </p>
+<a href="https://www.bazakoni.pl/fiesta-zotyruczaj-figlarka" class="btn btn-primary">Dowiedz się więcej</a>
+      </div>
+    </div>
+  </div>
+<div class="col">
+    <div class="card">
+      <img src="frajda.jpg" class="card-img-top" alt="Skyscrapers" style='object-fit:cover; height:50vh'/>
+      <div class="card-body">
+        <h5 class="card-title">...</h5>
+        <p class="card-text">
+          Rok urodzenia:
+	<br>Umaszczenie:
+	<br>...
+        </p>
+<a href="https://www.bazakoni.pl/fiesta-zotyruczaj-figlarka" class="btn btn-primary">Dowiedz się więcej</a>
+      </div>
+    </div>
+  </div>
+</div>
+	</div>
+	
+	<div id="cennik" > 
+<br><br><hr style='width:90vw'><h1 class='w3-center w3-margin'><hr style='width:15vw;'><i class="fa-solid fa-newspaper "></i><b> Cennik</b></h1><br>
+		 <div class='row w3-margin' >
+			
+<div class="col" >
+    <div class="card" >
+      <img src="zdj8.jpg" class="card-img-top" alt="Skyscrapers" style='object-fit:cover; height:50vh'/>
+      <div class="card-body">
+        <h5 class="card-title">Jazda na ujeżdżalni</h5>
+        <p class="card-text">
+          Grupowa jazda w zastępie sześciu koni pod okiem wyszkolonego instruktora.
+Jazda jednorazowa.
+        </p>
+<a href="https://www.bazakoni.pl/fiesta-zotyruczaj-figlarka" class="btn btn-primary w3-red">Dowiedz się więcej</a>
+      </div>
+    </div>
+  </div>
+<div class="col">
+    <div class="card">
+      <img src="zdj9.jpg" class="card-img-top" alt="Skyscrapers" style='object-fit:cover; height:50vh'/>
+      <div class="card-body">
+        <h5 class="card-title">3 godziny z koniem - 3HQ</h5>
+        <p class="card-text">
+          Zajęcia organizowane w soboty; można wykupić jednorazowo.
+Godzina jazdy konnej + 2 godziny praktyk w stajni i teorii
+        </p>
+<a href="https://www.bazakoni.pl/fiesta-zotyruczaj-figlarka" class="btn btn-primary w3-red">Dowiedz się więcej</a>
+      </div>
+    </div>
+  </div>
+</div>
+	 <div class='row w3-margin'>
+			
+<div class="col ">
+    <div class="card">
+      <img src="zdj10.jpg" class="card-img-top" alt="Skyscrapers" style='object-fit:cover; height:50vh'/>
+      <div class="card-body">
+        <h5 class="card-title">Zajęcia konne - (4 jazdy + 4h nauki o koniach)</h5>
+        <p class="card-text">
+          Co tydzień 2 godziny jazdy konnej i praktyk stajennych lub teorii.
+        </p>
+<a href="https://www.bazakoni.pl/fiesta-zotyruczaj-figlarka" class="btn btn-primary w3-red">Dowiedz się więcej</a>
+      </div>
+    </div>
+  </div>
+<div class="col" >
+    <div class="card" >
+      <img src="zdj7.jpg" class="card-img-top" alt="Skyscrapers" style='object-fit:cover; height:50vh'/>
+      <div class="card-body">
+        <h5 class="card-title">Jazda na ujeżdżalni, nauka jazdy, oprowadzanie</h5>
+        <p class="card-text">
+          Oferta dedykowana dla początkujących oraz małych dzieci.
+        </p>
+<a href="https://www.bazakoni.pl/fiesta-zotyruczaj-figlarka" class="btn btn-primary w3-red">Dowiedz się więcej</a>
+      </div>
+    </div>
+  </div>
+</div>
+	</div>
+	
+	<div id="kontakt"> 
+<br><br><hr style='width:90vw'><h1 class='w3-center w3-margin'><hr style='width:15vw;'><i class="fa-solid fa-newspaper "></i><b> Kontakt</b></h1><br>
+			
+	<div class='row w3-margin'>
+	<div class="col">
+		<iframe style='width:50vw; height:80vh; margin-left:5vw;' class='w3-card' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2566.2919646436503!2d20.041334215713995!3d49.96838297941173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471643b27c6d5f2f%3A0xa608f3381ee16e93!2sStajnia%20Felinka!5e0!3m2!1spl!2spl!4v1687310074469!5m2!1spl!2spl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br><br>
+</div>
+	
+		<div class='col' style='text-align:center'><br>
+			<h3><i class="fa-solid fa-envelope fa-xl" style="color: #941010;"></i><b></b></h3>
+			<h3><b> Kontakt e-mail</b></h3>
+			<h3 style='font-size:20px'><a style='color:brown;' href = "mailto: stajniafelinka@gmail.com">stajniafelinka@gmail.com</a></h3><br><br><br><br>
+			<h3><i class="fa-solid fa-phone fa-xl" style="color: #941010; "></i></h3>
+			<h3><b> Kontakt telefoniczny</b></h3>
+			<h3 style='font-size:20px'><a style='color:brown' href="tel:+48601498843">+48 601 498 843</a></h3><br><br><br><br>
+			<h3><i class="fa-solid fa-location-dot fa-xl" style="color: #941010; "></i></h3>
+			<h3><b>Lokalizacja</b></h3>
+			<h3 style='font-size:20px'>Stajnia Felinka <br>Siercza 274 <br>32-020 Siercza</h3>
+		</div>
+	</div>
+	</div>
+</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Stajnia Felinka
+          </h6>
+          <p> 
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Przydatne linki
+          </h6>
+          <p>
+            <a href="#onas" class="text-reset">O nas</a>
+          </p>
+          <p>
+            <a href="#konie" class="text-reset">Nasze konie</a>
+          </p>
+          <p>
+            <a href="#cennik" class="text-reset">Cennik</a>
+          </p>
+          <p>
+            <a href="#zdjecia" class="text-reset">Galeria</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Kontakt</h6>
+          <p><i class="fas fa-home me-3"></i> Siercza 274, 32-020 Siercza</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            stajniafelinka@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 48 601 498 843</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  
+</footer>
+<!-- Footer -->
+
+
+
+
+</html>
