@@ -12,8 +12,6 @@
   rel="stylesheet"
 />
 
-
-
 <script>
 	function changemenu(){
 		if (window.pageYOffset < 10){
@@ -74,6 +72,7 @@
     x.className = x.className.replace(" w3-show", "");
   }
 }
+	
 </script>
 
 
@@ -110,11 +109,12 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
-
+	
 	div.zakladki > div {display: none}
   	  div.zakladki div:target {display: block}
 
-
+	div {font-style:italic;
+	font-family:cursive}
 	hr {
 		background-color:darkgreen;
 		height:2px;
@@ -188,7 +188,7 @@ input[type=submit]:hover {
         <a class="w3-bar-item w3-animate-zoom w3-button w3-padding-large  w3-hide-small w3-hover-text-red w3-hover-none w3-serif w3-left" href="#onas" onclick="changeContent('onas' )">LOGO STAJNI</a>
 	<a class="w3-bar-item w3-animate-zoom w3-button w3-padding-large  w3-hide-small w3-hover-text-red w3-hover-none w3-serif" href="#onas" onclick="changeContent('onas' )">O NAS</a>
 	<a class="w3-bar-item w3-animate-zoom w3-button w3-padding-large  w3-hide-small w3-hover-text-red w3-hover-none w3-serif" href="#zdjecia" onclick="changeContent('zdjecia')">ZDJĘCIA</a>
-	<a class="w3-bar-item w3-animate-zoom w3-button w3-padding-large  w3-hide-small w3-hover-text-red w3-hover-none w3-serif" href="#konie" onclick="changeContent('d4')">KONIE</a>
+	<!--<a class="w3-bar-item w3-animate-zoom w3-button w3-padding-large  w3-hide-small w3-hover-text-red w3-hover-none w3-serif" href="#konie" onclick="changeContent('d4')">KONIE</a>-->
 	<a class="w3-bar-item w3-animate-zoom w3-button w3-padding-large  w3-hide-small w3-hover-text-red w3-hover-none w3-serif" href="#cennik" onclick="changeContent('d4')">CENNIK</a>
 	<a class="w3-bar-item w3-animate-zoom w3-button w3-padding-large  w3-hide-small w3-hover-text-red w3-hover-none w3-serif" href="#kontakt" onclick="changeContent('kontakt')">KONTAKT</a>
 </div>
@@ -197,7 +197,7 @@ input[type=submit]:hover {
   <a  class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"></a>
   <a href="#onas" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">O nas</a>
   <a href="#zdjecia" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Zdjęcia</a>
-  <a href="#konie" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Konie</a>
+  <!--<a href="#konie" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Konie</a>-->
   <a href="#cennik" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Cennik</a>
   <a href="#kontakt" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Kontakt</a>
 </div>
@@ -211,22 +211,21 @@ input[type=submit]:hover {
 		</div>
 	</div>
 
-	<div class="" style="background-image: url(zdj0.jpg); background-size:cover; background-position:center; height:100vh; width:100vw; z-index:0" id="abc">
-			<div style='height:35vh'></div>
-			<div class='ja-title w3-animate-right'>
-				STAJNIA FELINKA
-			</div>
-			<i class="fa-solid fa-chevron-left fa-beat w3-left w3-hide-small" style="color: #ffffff; margin-left:3vw; font-size:40px; text-shadow:3px 3px 5px black" onmouseover='this.style.color="#222222"' onmouseout='this.style.color="#ffffff"' onclick='previousImage()'></i>
-			<i class="fa-solid fa-chevron-right fa-beat w3-right" style="color: #ffffff; margin-right:3vw; font-size:40px; text-shadow:3px 3px 5px black" onmouseover='this.style.color="#222222"' onmouseout='this.style.color="#ffffff"' onclick='nextImage()'></i>		
-			
-		
-	</div>
-
+<div style='height:100vh; width:100vw; background-image: url(zdj15.jpg); background-size:cover; background-position:center'><h1 style='height:40vh'></h1><h1 class='w3-jumbo' style='margin-right:2vw;
+		font-size:1.2vw;
+		color:white;
+		text-decoration:none;
+		font-weight:bold;
+		font-family:arial;
+		text-shadow: 2px 2px 3px black;
+		width:100vw; text-align:center;'>STAJNIA FELINKA<h1></div>
 
 <div class="zakladki" style='z-index:0' id='zakladki'>
+
 	<!--onas-->
 	<div id="onas" style='width:100vw'> 
-		<br><br><hr style='width:90vw'><h1 class='w3-center w3-margin'><hr style='width:15vw;'><i class="fa-solid fa-newspaper "></i><b> O nas</b></h1><br>
+
+		<br><br><hr style='width:90vw'><h1 class='w3-center w3-margin'><hr style='width:15vw;'><i class="fa-regular fa-address-card"></i><b> O nas</b></h1><br>
 		<div class='w3-mobile w3-row-padding'>
 			
 			<div style=' margin-top:3vh; margin-left:4vw; color:#333333' class='w3-serif w3-large w3-col m6 w3-animate-left'> STAJNIA FELINKA" zaprasza na naukę jazdy konnej na kucach felińskich: dzieci, młodzież oraz dorosłych.<br>
@@ -249,12 +248,12 @@ input[type=submit]:hover {
 	
 		<div class='col w3-mobile' style='text-align:center'><br>
 			
-			<h3 class='w3-card'><b class='w3-xxlarge' style='text-shadow: 2px 2px 5px green'>Agata Janowska</b><br><br>
+			<h3 class=''><b class='w3-xxlarge' style='text-shadow: 2px 2px 5px green'>Agata Janowska</b><br><br>
 Siercza k/Wieliczki<br>
 601-498-843<br>
 Instruktor Jazdy Konnej<br>
 Nr.Leg. 30773/I/R/2009 Prz</h3>
-			
+			<br>
 			
 		</div>
 	</div>
@@ -262,51 +261,51 @@ Nr.Leg. 30773/I/R/2009 Prz</h3>
 		
 
 <div class="row" style='margin:5vw'>
-  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" style=''>
     <img
       src="zdj1.jpg"
       class="w-100 shadow-1-strong rounded mb-4"
       alt="Boat on Calm Water"
-	  style='object-fit:cover; height:30vh'
+	  style='object-fit:cover; height:30%'
     />
 
     <img
       src="zdj4.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
+      class="w-100 shadow-1-strong rounded mb-4 "
       alt="Wintry Mountain Landscape"
-	  style='object-fit:cover; height:80vh'
+	  style='object-fit:cover; height:65%'
     />
   </div>
 
-  <div class="col-lg-4 mb-4 mb-lg-0">
+  <div class="col-lg-4 mb-4 mb-lg-0" style=''>
     <img
       src="zdj3.jpg"
       class="w-100 shadow-1-strong rounded mb-4"
       alt="Mountains in the Clouds"
-	  style='object-fit:cover; height:80vh'
+	  style='object-fit:cover; height:65%'
     />
 
     <img
       src="zdj11.jpg"
       class="w-100 shadow-1-strong rounded mb-4"
       alt="Boat on Calm Water"
-	  style='object-fit:cover; height:30vh'
+	  style='object-fit:cover; height:30%'
     />
   </div>
 
-  <div class="col-lg-4 mb-4 mb-lg-0">
+  <div class="col-lg-4 mb-4 mb-lg-0" style=''>
     <img
       src="zdj6.jpg"
       class="w-100 shadow-1-strong rounded mb-4"
       alt="Waves at Sea"
-	  style='object-fit:cover; height:30vh'
+	  style='object-fit:cover; height:40%'
     />
 
     <img
       src="zdj19.jpg"
       class="w-100 shadow-1-strong rounded mb-4"
       alt="Yosemite National Park"
-	  style='object-fit:cover; height:80vh'
+	  style='object-fit:cover; height:55%'
     />
   </div>
 </div>
@@ -315,7 +314,7 @@ Nr.Leg. 30773/I/R/2009 Prz</h3>
 	
 	<div id="zdjecia" >
 
-	<br><br><hr style='width:90vw'><h1 class='w3-center w3-margin'><hr style='width:15vw;'><i class="fa-solid fa-newspaper "></i><b> Galeria </b></h1><br>
+	<br><br><hr style='width:90vw'><h1 class='w3-center w3-margin'><hr style='width:15vw;'><i class="fa-regular fa-image"></i><b> Galeria </b></h1><br>
 
       <div class="row" style='margin:5vw'>
   <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
@@ -436,7 +435,7 @@ style='object-fit:cover; height:50vh'
       class="w-100 shadow-1-strong rounded mb-4"
       alt="Wintry Mountain Landscape"
     />
-  </div>
+  </div> 
 </div>
 <!-- Gallery -->
 
@@ -536,59 +535,63 @@ Rok urodzenia:
 	</div>
 	
 	<div id="cennik" > 
-<br><br><hr style='width:90vw'><h1 class='w3-center w3-margin'><hr style='width:15vw;'><i class="fa-solid fa-newspaper "></i><b> Cennik</b></h1><br>
+<br><br><hr style='width:90vw'><h1 class='w3-center w3-margin'><hr style='width:15vw;'><i class="fa-solid fa-money-bill-1-wave"></i><b> Cennik</b></h1><br>
 		 <div class='row w3-margin' >
 			
-<div class="col" >
+<div class="col-lg-6 col-sm-12 col-md-12" >
     <div class="card" >
-      <img src="zdj8.jpg" class="card-img-top" alt="Skyscrapers" style='object-fit:cover; height:50vh'/>
+      <img src="zdj14.jpg" class="card-img-top" alt="Skyscrapers" style='object-fit:cover; height:50vh'/>
       <div class="card-body">
         <h5 class="card-title">Jazda na ujeżdżalni</h5>
+		
         <p class="card-text">
           Grupowa jazda w zastępie sześciu koni pod okiem wyszkolonego instruktora.
 Jazda jednorazowa.
         </p>
-<a href="https://www.bazakoni.pl/fiesta-zotyruczaj-figlarka" class="btn btn-primary w3-red">Dowiedz się więcej</a>
+		<h6 class='w3-right w3-text-green'>  50zł(40ZŁ)/60min</h6>
+
       </div>
     </div>
   </div>
-<div class="col">
+<div class="col-lg-6 col-sm-12 col-md-12" >
     <div class="card">
-      <img src="zdj9.jpg" class="card-img-top" alt="Skyscrapers" style='object-fit:cover; height:50vh'/>
+      <img src="zdj23.jpg" class="card-img-top" alt="Skyscrapers" style='object-fit:cover; height:50vh'/>
       <div class="card-body">
         <h5 class="card-title">3 godziny z koniem - 3HQ</h5>
         <p class="card-text">
           Zajęcia organizowane w soboty; można wykupić jednorazowo.
 Godzina jazdy konnej + 2 godziny praktyk w stajni i teorii
         </p>
-<a href="https://www.bazakoni.pl/fiesta-zotyruczaj-figlarka" class="btn btn-primary w3-red">Dowiedz się więcej</a>
+<h6 class='w3-right w3-text-green'>  100zł</h6>
       </div>
     </div>
   </div>
 </div>
 	 <div class='row w3-margin'>
 			
-<div class="col ">
+<div class="col-lg-6 col-sm-12 col-md-12">
     <div class="card">
-      <img src="zdj10.jpg" class="card-img-top" alt="Skyscrapers" style='object-fit:cover; height:50vh'/>
+      <img src="zdj6.jpg" class="card-img-top" alt="Skyscrapers" style='object-fit:cover; height:50vh'/>
       <div class="card-body">
         <h5 class="card-title">Zajęcia konne - (4 jazdy + 4h nauki o koniach)</h5>
         <p class="card-text">
           Co tydzień 2 godziny jazdy konnej i praktyk stajennych lub teorii.
         </p>
-<a href="https://www.bazakoni.pl/fiesta-zotyruczaj-figlarka" class="btn btn-primary w3-red">Dowiedz się więcej</a>
+<h6 class='w3-right w3-text-green'> 200zł/mc</h6>
       </div>
     </div>
   </div>
-<div class="col" >
+<div class="col-lg-6 col-sm-12 col-md-12" >
     <div class="card" >
-      <img src="zdj7.jpg" class="card-img-top" alt="Skyscrapers" style='object-fit:cover; height:50vh'/>
+      <img src="zdj9.jpg" class="card-img-top" alt="Skyscrapers" style='object-fit:cover; height:50vh'/>
       <div class="card-body">
         <h5 class="card-title">Jazda na ujeżdżalni, nauka jazdy, oprowadzanie</h5>
         <p class="card-text">
           Oferta dedykowana dla początkujących oraz małych dzieci.
         </p>
-<a href="https://www.bazakoni.pl/fiesta-zotyruczaj-figlarka" class="btn btn-primary w3-red">Dowiedz się więcej</a>
+		<h6 class='w3-right w3-text-green'> 30zł/30min</h6>
+		
+<!--<a href="" class="btn btn-primary w3-red">Dowiedz się więcej</a>-->
       </div>
     </div>
   </div>
@@ -610,10 +613,7 @@ Godzina jazdy konnej + 2 godziny praktyk w stajni i teorii
 			<h3><i class="fa-solid fa-phone fa-xl" style="color: #941010; "></i></h3>
 			<h3><b> Kontakt telefoniczny</b></h3>
 			<h3 style='font-size:20px'><a style='color:brown' href="tel:+48601498843">+48 601 498 843</a></h3><br><br><br><br>
-			<h3><i class="fa-solid fa-location-dot fa-xl" style="color: #941010; "></i></h3>
-			<h3><b>Lokalizacja</b></h3>
-			<h3 style='font-size:20px'>Stajnia Felinka <br>Siercza 274 <br>32-020 Siercza</h3>
-		</div>
+			</div>
 	</div>
 	</div>
 </div>
